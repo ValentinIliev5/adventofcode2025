@@ -10,13 +10,15 @@ for command in commands:
     moves = int(command[1:])
     number = moves*(-1 if direction=='L' else 1)
     current = current + number
-    while current < 0:
-        current = 100 + current
-    while current >= 100:
-        current = current - 100
+    if current < 0:
+        current %= 100
+
+    if current >= 100:
+        current %= 100
+    
     # print(current)
     if current == 0:
-        times +=1
+        times += 1
         # break
 
 

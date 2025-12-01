@@ -15,7 +15,7 @@ for command in commands:
     current = current + number
     
     if current == 0:
-        times +=1
+        times += 1
     
     if current >= 100:
         times += int(current/100)
