@@ -30,6 +30,6 @@ for command in commands:
             times += (1 + int((current*-1) / 100))
             current = current % 100
 
-    print(current,times)
+    # print(current,times)
 
 print(times)
